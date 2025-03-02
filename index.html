@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Save the Date - [Your Names] Wedding</title>
+    <style>
+        /* Global Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f9f7f5;
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        /* Header Styles - Modernized */
+        header {
+            text-align: center;
+            padding: 80px 0;
+            background: linear-gradient(135deg, #f8f1e9 0%, #e8d8c9 100%);
+            position: relative;
+            overflow: hidden;
+            border-radius: 0 0 30% 30% / 20px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+        }
+        
+        header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100"><circle cx="50" cy="50" r="5" fill="%23fff" opacity="0.05"/></svg>');
+            z-index: 1;
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            color: #8b5a2b;
+            margin-bottom: 10px;
+            font-family: 'Georgia', serif;
+            position: relative;
+            z-index: 2;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+        }
+        
+        .tagline {
+            font-size: 1.5rem;
+            color: #a67c52;
+            font-style: italic;
+            margin-bottom: 20px;
+            position: relative;
+            z-index: 2;
+            font-weight: 300;
+        }
+        
+        .names {
+            font-size: 3.5rem;
+            color: #8b5a2b;
+            margin: 30px 0;
+            font-family: 'Georgia', serif;
+            position: relative;
+            z-index: 2;
+            display: inline-block;
+            padding: 0 20px 10px;
+            border-bottom: 2px solid rgba(139, 90, 43, 0.3);
+            letter-spacing: 1px;
+        }
+        
+        /* Main Content - Modernized */
+        .main-content {
+            text-align: center;
+            padding: 60px 0;
+            position: relative;
+        }
+        
+        .date-location {
+            margin: 40px auto;
+            padding: 40px 30px;
+            max-width: 700px;
+            background-color: #fff;
+            border-radius: 16px;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
+            position: relative;
+            z-index: 1;
+            backdrop-filter: blur(5px);
+            border: 1px solid rgba(255, 255, 255, 0.5);
+            transform: translateY(-30px);
+        }
+        
+        .save-date {
+            font-size: 2rem;
+            color: #8b5a2b;
+            margin-bottom: 20px;
+        }
+        
+        .wedding-date {
+            font-size: 1.8rem;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+        
+        .location {
+            font-size: 1.3rem;
+            margin-bottom: 15px;
+        }
+        
+        .details {
+            margin: 40px 0;
+        }
+        
+        .details p {
+            margin-bottom: 20px;
+            font-size: 1.1rem;
+        }
+        
+        /* Photo Section */
+        .photo-section {
+            margin: 40px 0;
+            text-align: center;
+        }
+        
+        .photo-placeholder {
+            width: 300px;
+            height: 300px;
+            background-color: #e0d5c8;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            color: #8b5a2b;
+            font-size: 1.2rem;
+        }
+        
+        /* Modernized RSVP Section */
+        .rsvp-section {
+            text-align: center;
+            margin: 60px 0;
+            padding: 40px 20px;
+            background: linear-gradient(135deg, #f8f1e9 0%, #e8d8c9 100%);
+            border-radius: 16px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .rsvp-section::before {
+            content: '';
+            position: absolute;
+            top: -10px;
+            right: -10px;
+            width: 100px;
+            height: 100px;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 50%;
+            filter: blur(20px);
+        }
+        
+        .rsvp-section h2 {
+            color: #8b5a2b;
+            margin-bottom: 20px;
+            font-size: 2rem;
+            position: relative;
+            display: inline-block;
+        }
+        
+        .rsvp-section h2::after {
+            content: '';
+            position: absolute;
+            bottom: -8px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 60px;
+            height: 2px;
+            background-color: #a67c52;
+        }
+        
+        .google-form-container {
+            max-width: 600px;
+            margin: 30px auto 0;
+            padding: 20px;
+        }
+        
+        .google-form-button {
+            display: inline-block;
+            background-color: #8b5a2b;
+            color: white;
+            text-decoration: none;
+            padding: 15px 40px;
+            font-size: 1.1rem;
+            border-radius: 50px;
+            margin: 25px 0;
+            box-shadow: 0 5px 15px rgba(139, 90, 43, 0.3);
+            transition: all 0.3s ease;
+            font-weight: bold;
+            letter-spacing: 1px;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .google-form-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(139, 90, 43, 0.4);
+            background-color: #a67c52;
+        }
+        
+        .google-form-button:active {
+            transform: translateY(0);
+        }
+        
+        .form-deadline {
+            font-style: italic;
+            margin-top: 15px;
+            color: #a67c52;
+        }
+        
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #f8f1e9;
+            color: #8b5a2b;
+            margin-top: 40px;
+        }
+        
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+            
+            .names {
+                font-size: 2.5rem;
+            }
+            
+            .save-date {
+                font-size: 1.8rem;
+            }
+            
+            .wedding-date {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Save the Date</h1>
+            <p class="tagline">We're getting married!</p>
+            <h2 class="names">[Partner 1] & [Partner 2]</h2>
+        </header>
+        
+        <main class="main-content">
+            <div class="date-location">
+                <h2 class="save-date">Please Save the Date</h2>
+                <p class="wedding-date">[Month Day, Year]</p>
+                <p class="location">[Venue Name]<br>[Venue Address]<br>[City, State, Zip]</p>
+            </div>
+            
+            <div class="details">
+                <p>Formal invitation to follow</p>
+                <p>We can't wait to celebrate our special day with you!</p>
+            </div>
+            
+            <div class="photo-section">
+                <div class="photo-placeholder">
+                    <p>Your Photo Here</p>
+                </div>
+            </div>
+            
+            <div class="rsvp-section">
+                <h2>RSVP</h2>
+                <p>Kindly let us know if you'll be joining us</p>
+                <div class="google-form-container">
+                    <p>Please fill out our RSVP form by clicking the button below:</p>
+                    <a href="https://forms.gle/yourFormLinkHere" class="google-form-button">
+                        RSVP Now
+                    </a>
+                    <p class="form-deadline">Please respond by [RSVP Deadline]</p>
+                </div>
+            </div>
+        </main>
+        
+        <footer>
+            <p>&copy; [Year] [Partner 1] & [Partner 2]</p>
+            <p>Website created with love for our special day</p>
+        </footer>
+    </div>
+</body>
+</html>
