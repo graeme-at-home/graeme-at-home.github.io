@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Save the Date!</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
     <style>
         /* Global Styles */
         * {
@@ -15,8 +16,10 @@
         body {
             font-family: 'Arial', sans-serif;
             line-height: 1.6;
-            color: #333;
-            background-color: #f9f7f5;
+            color: #222;
+            background-color: #000;
+            background-image: url('stars.gif');
+            background-attachment: fixed;
         }
         
         .container {
@@ -25,17 +28,18 @@
             padding: 20px;
         }
         
-        /* Header Styles - Modernized */
+        /* Header Styles - Pop Art */
         header {
             text-align: center;
-            padding: 80px 0;
-            background: linear-gradient(135deg, #f8f1e9 0%, #e8d8c9 100%);
+            padding: 60px 0;
+            background: #ff0066;
             position: relative;
             overflow: hidden;
-            border-radius: 0 0 30% 30% / 20px;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            border: 8px solid #000;
+            margin-bottom: 40px;
         }
         
+        /* Pop art dots overlay */
         header::before {
             content: '';
             position: absolute;
@@ -43,48 +47,59 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100"><circle cx="50" cy="50" r="5" fill="%23fff" opacity="0.05"/></svg>');
+            background-image: radial-gradient(#fff 8px, transparent 8px);
+            background-size: 40px 40px;
             z-index: 1;
+            opacity: 0.2;
         }
         
         h1 {
-            font-size: 2.5rem;
-            color: #8b5a2b;
+            font-size: 4rem;
+            color: #fff;
             margin-bottom: 10px;
-            font-family: 'Georgia', serif;
+            font-family: 'Impact', 'Arial Black', sans-serif;
             position: relative;
             z-index: 2;
             letter-spacing: 3px;
             text-transform: uppercase;
+            text-shadow: 5px 5px 0 #000;
         }
         
         .tagline {
-            font-size: 1.5rem;
-            color: #a67c52;
-            font-style: italic;
-            margin-bottom: 20px;
+            font-size: 1.6rem;
+            color: #fff;
+            font-weight: bold;
+            margin-bottom: 30px;
             position: relative;
             z-index: 2;
-            font-weight: 300;
+            background-color: #000;
+            display: inline-block;
+            padding: 8px 15px;
         }
         
         .names {
-            font-size: 3.5rem;
-            color: #8b5a2b;
-            margin: 30px 0;
-            font-family: 'Georgia', serif;
+            font-size: 5rem;
+            color: #ffff00;
+            margin: 30px 0 15px;
+            font-family: 'Impact', 'Arial Black', sans-serif;
             position: relative;
             z-index: 2;
-            display: inline-block;
-            padding: 0 20px 10px;
-            border-bottom: 2px solid rgba(139, 90, 43, 0.3);
-            letter-spacing: 1px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            text-shadow: 4px 4px 0 #000;
         }
         
-        /* Main Content - Modernized */
+        .join-us-gif {
+            margin: 20px auto;
+            display: block;
+            border: 5px solid #000;
+            max-width: 100%;
+        }
+        
+        /* Main Content - Pop Art Style */
         .main-content {
             text-align: center;
-            padding: 60px 0;
+            padding: 0;
             position: relative;
         }
         
@@ -92,168 +107,223 @@
             margin: 40px auto;
             padding: 40px 30px;
             max-width: 700px;
-            background-color: #fff;
-            border-radius: 16px;
-            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
+            background-color: #00ccff;
             position: relative;
             z-index: 1;
-            backdrop-filter: blur(5px);
-            border: 1px solid rgba(255, 255, 255, 0.5);
-            transform: translateY(-30px);
+            border: 8px solid #000;
+        }
+        
+        .rose-gif {
+            position: absolute;
+            top: -30px;
+            right: 30px;
+            max-width: 100px;
         }
         
         .save-date {
-            font-size: 2rem;
-            color: #8b5a2b;
-            margin-bottom: 20px;
+            font-size: 2.8rem;
+            color: #fff;
+            margin-bottom: 30px;
+            font-family: 'Impact', 'Arial Black', sans-serif;
+            text-shadow: 3px 3px 0 #000;
+            text-transform: uppercase;
         }
         
         .wedding-date {
-            font-size: 1.8rem;
+            font-size: 2.2rem;
             font-weight: bold;
             margin-bottom: 15px;
+            color: #ffff00;
+            text-shadow: 2px 2px 0 #000;
+            letter-spacing: 1px;
         }
         
         .location {
-            font-size: 1.3rem;
+            font-size: 1.8rem;
             margin-bottom: 15px;
+            background-color: #ff0066;
+            display: inline-block;
+            padding: 10px 20px;
+            color: #fff;
+            border: 4px solid #000;
+            font-weight: bold;
         }
         
         .details {
-            margin: 40px 0;
+            margin: 60px 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #ffff00;
+            padding: 30px;
+            border: 8px solid #000;
         }
         
         .details p {
             margin-bottom: 20px;
-            font-size: 1.1rem;
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #000;
+        }
+        
+        .details p:last-child {
+            font-size: 2rem;
+            color: #ff0066;
+            text-transform: uppercase;
+            margin-top: 10px;
+        }
+        
+        .butterfly-gif {
+            margin: 20px auto;
+            display: block;
+            max-width: 100%;
+        }
+        
+        /* Love Husband Section */
+        .love-husband-section {
+            margin: 40px 0;
+            text-align: center;
+            background: #fff;
+            padding: 30px;
+            border: 8px solid #000;
+        }
+        
+        .love-husband-gif {
+            max-width: 100%;
+            margin: 0 auto;
+            display: block;
         }
         
         /* Photo Section */
         .photo-section {
-            margin: 40px 0;
+            margin: 60px 0;
             text-align: center;
+            position: relative;
         }
         
         .photo-placeholder {
             width: 300px;
             height: 300px;
-            background-color: #e0d5c8;
+            background-color: #00ccff;
             margin: 0 auto;
             display: flex;
             align-items: center;
             justify-content: center;
-            border-radius: 50%;
-            color: #8b5a2b;
-            font-size: 1.2rem;
+            color: #fff;
+            font-size: 1.6rem;
+            border: 8px solid #000;
+            position: relative;
+            font-weight: bold;
         }
         
-        /* Modernized RSVP Section */
+        .wedding-cake-gif {
+            position: absolute;
+            bottom: -50px;
+            right: -30px;
+            max-width: 120px;
+            z-index: 3;
+        }
+        
+        /* Pop Art RSVP Section */
         .rsvp-section {
             text-align: center;
-            margin: 60px 0;
-            padding: 40px 20px;
-            background: linear-gradient(135deg, #f8f1e9 0%, #e8d8c9 100%);
-            border-radius: 16px;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+            margin: 80px 0 60px;
+            padding: 40px 30px;
+            background: #ff6600;
             position: relative;
             overflow: hidden;
+            border: 8px solid #000;
         }
         
-        .rsvp-section::before {
-            content: '';
-            position: absolute;
-            top: -10px;
-            right: -10px;
-            width: 100px;
-            height: 100px;
-            background: rgba(255, 255, 255, 0.2);
-            border-radius: 50%;
-            filter: blur(20px);
+        .rsvp-gif {
+            max-width: 150px;
+            margin: 0 auto 20px;
+            display: block;
         }
         
         .rsvp-section h2 {
-            color: #8b5a2b;
-            margin-bottom: 20px;
-            font-size: 2rem;
+            color: #fff;
+            margin: 10px 0 30px;
+            font-size: 3rem;
             position: relative;
             display: inline-block;
-        }
-        
-        .rsvp-section h2::after {
-            content: '';
-            position: absolute;
-            bottom: -8px;
-            left: 50%;
-            transform: translateX(-50%);
-            width: 60px;
-            height: 2px;
-            background-color: #a67c52;
+            font-family: 'Impact', 'Arial Black', sans-serif;
+            text-shadow: 3px 3px 0 #000;
+            letter-spacing: 2px;
         }
         
         .google-form-container {
             max-width: 600px;
             margin: 30px auto 0;
-            padding: 20px;
+            padding: 30px;
+            background-color: #000;
+            border: 4px solid #fff;
+            color: #fff;
         }
         
         .google-form-button {
             display: inline-block;
-            background-color: #8b5a2b;
-            color: white;
+            background-color: #ffff00;
+            color: #000;
             text-decoration: none;
             padding: 15px 40px;
-            font-size: 1.1rem;
-            border-radius: 50px;
+            font-size: 1.4rem;
             margin: 25px 0;
-            box-shadow: 0 5px 15px rgba(139, 90, 43, 0.3);
             transition: all 0.3s ease;
             font-weight: bold;
-            letter-spacing: 1px;
-            position: relative;
-            overflow: hidden;
+            text-transform: uppercase;
+            border: 5px solid #000;
         }
         
         .google-form-button:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 8px 20px rgba(139, 90, 43, 0.4);
-            background-color: #a67c52;
-        }
-        
-        .google-form-button:active {
-            transform: translateY(0);
+            background-color: #fff;
         }
         
         .form-deadline {
             font-style: italic;
-            margin-top: 15px;
-            color: #a67c52;
+            margin-top: 20px;
+            color: #fff;
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+        
+        .guestbook-gif {
+            max-width: 150px;
+            margin: 30px auto 0;
+            display: block;
         }
         
         /* Footer */
         footer {
             text-align: center;
-            padding: 20px;
-            background-color: #f8f1e9;
-            color: #8b5a2b;
+            padding: 30px;
+            background-color: #000;
+            color: #fff;
             margin-top: 40px;
+            font-size: 1.5rem;
+            border-top: 8px solid #ff0066;
         }
         
         /* Responsive Design */
         @media (max-width: 768px) {
             h1 {
-                font-size: 2rem;
+                font-size: 3rem;
             }
             
             .names {
-                font-size: 2.5rem;
+                font-size: 3.2rem;
             }
             
             .save-date {
-                font-size: 1.8rem;
+                font-size: 2.2rem;
             }
             
             .wedding-date {
-                font-size: 1.5rem;
+                font-size: 1.8rem;
+            }
+            
+            .rose-gif, .wedding-cake-gif {
+                max-width: 80px;
             }
         }
     </style>
@@ -264,42 +334,52 @@
             <h1>Save the Date</h1>
             <p class="tagline">We're throwing a wedding party! (Yeah we already got married)</p>
             <h2 class="names">Jaimie & Graeme</h2>
+            <img src="Come_Join_Us_12053.gif" alt="Come Join Us" class="join-us-gif">
         </header>
         
         <main class="main-content">
             <div class="date-location">
+                <img src="XX007211.GIF" alt="Swinging Rose" class="rose-gif">
                 <h2 class="save-date">Please Save the Date</h2>
                 <p class="wedding-date">Weekend of Oct 11, 2025</p>
-                <p class="location"><br>Port Townsend, WA</p>
+                <p class="location">Port Townsend, WA</p>
+            </div>
+            
+            <div class="love-husband-section">
+                <img src="wedding11.gif" alt="I love my husband" class="love-husband-gif">
             </div>
             
             <div class="details">
-                <p>Formal invitation to follow w/ deets</p>
+                <p>Formal invitation to follow w/ deets!</p>
                 <p>Lodging, transport, schedule, etc</p>
-                <p>Can't wait!</p>
+                <p>CAN'T WAIT!</p>
+                <img src="butflysflower.gif" alt="Butterfly and Flowers" class="butterfly-gif">
             </div>
             
             <div class="photo-section">
                 <div class="photo-placeholder">
-                    <p>Your Photo Here</p>
+                    <img src="us.jpg">
                 </div>
+                <img src="wedding_cake_bridegroomwaving_lg_clr.gif" alt="Wedding Cake" class="wedding-cake-gif">
             </div>
             
             <div class="rsvp-section">
+                <img src="rsvp.gif" alt="RSVP" class="rsvp-gif">
                 <h2>RSVP</h2>
-                <p>Kindly let us know if you'll be joining us</p>
+                <p>Kindly let us know if you'll be joining our celebration!</p>
                 <div class="google-form-container">
                     <p>Please fill out our RSVP form by clicking the button below:</p>
                     <a href="https://forms.gle/?" class="google-form-button">
                         RSVP Now
                     </a>
                     <p class="form-deadline">Please respond by [RSVP Deadline]</p>
+                    <img src="guestbook_md_wht.gif" alt="Guestbook" class="guestbook-gif">
                 </div>
             </div>
         </main>
         
         <footer>
-            <p>:)</p>
+            <p>WE CAN'T WAIT TO CELEBRATE WITH YOU!</p>
         </footer>
     </div>
 </body>
