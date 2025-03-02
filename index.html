@@ -16,10 +16,11 @@
         body {
             font-family: 'Arial', sans-serif;
             line-height: 1.6;
-            color: #222;
-            background-color: #000;
-            background-image: url('stars.gif');
+            color: #333;
+            background-color: #e8f4fc;
+            background-image: url('/api/placeholder/800/600');
             background-attachment: fixed;
+            background-size: cover;
         }
         
         .container {
@@ -28,18 +29,20 @@
             padding: 20px;
         }
         
-        /* Header Styles - Pop Art */
+        /* Header Styles - Springtime Theme */
         header {
             text-align: center;
             padding: 60px 0;
-            background: #ff0066;
+            background: #7eb5d6;
             position: relative;
             overflow: hidden;
-            border: 8px solid #000;
+            border: 8px solid #fff;
             margin-bottom: 40px;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
         }
         
-        /* Pop art dots overlay */
+        /* Cloud-like overlay */
         header::before {
             content: '';
             position: absolute;
@@ -50,19 +53,19 @@
             background-image: radial-gradient(#fff 8px, transparent 8px);
             background-size: 40px 40px;
             z-index: 1;
-            opacity: 0.2;
+            opacity: 0.3;
         }
         
         h1 {
             font-size: 4rem;
             color: #fff;
             margin-bottom: 10px;
-            font-family: 'Impact', 'Arial Black', sans-serif;
+            font-family: 'Arial', sans-serif;
             position: relative;
             z-index: 2;
-            letter-spacing: 3px;
+            letter-spacing: 2px;
             text-transform: uppercase;
-            text-shadow: 5px 5px 0 #000;
+            text-shadow: 2px 2px 0 #5590bd;
         }
         
         .tagline {
@@ -72,31 +75,33 @@
             margin-bottom: 30px;
             position: relative;
             z-index: 2;
-            background-color: #000;
+            background-color: #9bcde7;
             display: inline-block;
             padding: 8px 15px;
+            border-radius: 10px;
         }
         
         .names {
             font-size: 5rem;
-            color: #ffff00;
+            color: #ffffff;
             margin: 30px 0 15px;
-            font-family: 'Impact', 'Arial Black', sans-serif;
+            font-family: 'Arial', sans-serif;
             position: relative;
             z-index: 2;
             text-transform: uppercase;
             letter-spacing: 2px;
-            text-shadow: 4px 4px 0 #000;
+            text-shadow: 2px 2px 0 #5590bd;
         }
         
         .join-us-gif {
             margin: 20px auto;
             display: block;
-            border: 5px solid #000;
+            border: 5px solid #fff;
             max-width: 100%;
+            border-radius: 10px;
         }
         
-        /* Main Content - Pop Art Style */
+        /* Main Content - Springtime Style */
         .main-content {
             text-align: center;
             padding: 0;
@@ -107,10 +112,12 @@
             margin: 40px auto;
             padding: 40px 30px;
             max-width: 700px;
-            background-color: #00ccff;
+            background-color: #8fd19e;
             position: relative;
             z-index: 1;
-            border: 8px solid #000;
+            border: 8px solid #fff;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
         }
         
         .rose-gif {
@@ -124,8 +131,8 @@
             font-size: 2.8rem;
             color: #fff;
             margin-bottom: 30px;
-            font-family: 'Impact', 'Arial Black', sans-serif;
-            text-shadow: 3px 3px 0 #000;
+            font-family: 'Arial', sans-serif;
+            text-shadow: 2px 2px 0 #5a9d69;
             text-transform: uppercase;
         }
         
@@ -133,20 +140,21 @@
             font-size: 2.2rem;
             font-weight: bold;
             margin-bottom: 15px;
-            color: #ffff00;
-            text-shadow: 2px 2px 0 #000;
+            color: #fff;
+            text-shadow: 1px 1px 0 #5a9d69;
             letter-spacing: 1px;
         }
         
         .location {
             font-size: 1.8rem;
             margin-bottom: 15px;
-            background-color: #ff0066;
+            background-color: #7eb5d6;
             display: inline-block;
             padding: 10px 20px;
             color: #fff;
-            border: 4px solid #000;
+            border: 4px solid #fff;
             font-weight: bold;
+            border-radius: 10px;
         }
         
         .details {
@@ -154,21 +162,23 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            background-color: #ffff00;
+            background-color: #fcd485;
             padding: 30px;
-            border: 8px solid #000;
+            border: 8px solid #fff;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
         }
         
         .details p {
             margin-bottom: 20px;
             font-size: 1.5rem;
             font-weight: bold;
-            color: #000;
+            color: #333;
         }
         
         .details p:last-child {
             font-size: 2rem;
-            color: #ff0066;
+            color: #7eb5d6;
             text-transform: uppercase;
             margin-top: 10px;
         }
@@ -185,7 +195,9 @@
             text-align: center;
             background: #fff;
             padding: 30px;
-            border: 8px solid #000;
+            border: 8px solid #8fd19e;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
         }
         
         .love-husband-gif {
@@ -204,16 +216,19 @@
         .photo-placeholder {
             width: 300px;
             height: 300px;
-            background-color: #00ccff;
+            background-color: #7eb5d6;
             margin: 0 auto;
             display: flex;
             align-items: center;
             justify-content: center;
             color: #fff;
             font-size: 1.6rem;
-            border: 8px solid #000;
+            border: 8px solid #fff;
             position: relative;
             font-weight: bold;
+            border-radius: 50%;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
         }
         
         .wedding-cake-gif {
@@ -224,15 +239,17 @@
             z-index: 3;
         }
         
-        /* Pop Art RSVP Section */
+        /* Springtime RSVP Section */
         .rsvp-section {
             text-align: center;
             margin: 80px 0 60px;
             padding: 40px 30px;
-            background: #ff6600;
+            background: #fcd485;
             position: relative;
             overflow: hidden;
-            border: 8px solid #000;
+            border: 8px solid #fff;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
         }
         
         .rsvp-gif {
@@ -247,8 +264,8 @@
             font-size: 3rem;
             position: relative;
             display: inline-block;
-            font-family: 'Impact', 'Arial Black', sans-serif;
-            text-shadow: 3px 3px 0 #000;
+            font-family: 'Arial', sans-serif;
+            text-shadow: 2px 2px 0 #d9a44e;
             letter-spacing: 2px;
         }
         
@@ -256,15 +273,16 @@
             max-width: 600px;
             margin: 30px auto 0;
             padding: 30px;
-            background-color: #000;
-            border: 4px solid #fff;
-            color: #fff;
+            background-color: #fff;
+            border: 4px solid #7eb5d6;
+            color: #333;
+            border-radius: 10px;
         }
         
         .google-form-button {
             display: inline-block;
-            background-color: #ffff00;
-            color: #000;
+            background-color: #8fd19e;
+            color: #fff;
             text-decoration: none;
             padding: 15px 40px;
             font-size: 1.4rem;
@@ -272,17 +290,18 @@
             transition: all 0.3s ease;
             font-weight: bold;
             text-transform: uppercase;
-            border: 5px solid #000;
+            border: 5px solid #fff;
+            border-radius: 30px;
         }
         
         .google-form-button:hover {
-            background-color: #fff;
+            background-color: #7eb5d6;
         }
         
         .form-deadline {
             font-style: italic;
             margin-top: 20px;
-            color: #fff;
+            color: #666;
             font-weight: bold;
             font-size: 1.2rem;
         }
@@ -297,11 +316,12 @@
         footer {
             text-align: center;
             padding: 30px;
-            background-color: #000;
+            background-color: #7eb5d6;
             color: #fff;
             margin-top: 40px;
             font-size: 1.5rem;
-            border-top: 8px solid #ff0066;
+            border-top: 8px solid #8fd19e;
+            border-radius: 15px 15px 0 0;
         }
         
         /* Responsive Design */
