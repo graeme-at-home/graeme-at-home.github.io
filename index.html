@@ -3,10 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Save the Date!</title>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <title>Jaimie & Graeme | October 11, 2025</title>
     <style>
-        /* Global Styles */
+        /* Reset and Base Styles */
         * {
             margin: 0;
             padding: 0;
@@ -14,372 +13,359 @@
         }
         
         body {
-            font-family: 'Arial', sans-serif;
+            font-family: 'Courier New', Courier, monospace;
             line-height: 1.6;
-            color: #222;
-            background-color: #000;
-            background-image: url('XX007211.GIF');
-            background-attachment: fixed;
-        }
-        
-        .container {
-            max-width: 1000px;
-            margin: 0 auto;
+            color: #000;
+            background-color: #e6f3ff;
             padding: 20px;
         }
         
-        /* Header Styles - Pop Art */
+        /* Container */
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #fff;
+            border: 2px solid #000;
+            padding: 40px;
+        }
+        
+        /* Header */
         header {
             text-align: center;
-            padding: 60px 0;
-            background: #ff0066;
-            position: relative;
-            overflow: hidden;
-            border: 8px solid #000;
+            padding-bottom: 30px;
+            border-bottom: 2px dashed #000;
             margin-bottom: 40px;
         }
         
-        /* Pop art dots overlay */
-        header::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-image: radial-gradient(#fff 8px, transparent 8px);
-            background-size: 40px 40px;
-            z-index: 1;
-            opacity: 0.2;
-        }
-        
         h1 {
-            font-size: 4rem;
-            color: #fff;
+            font-size: 2.5rem;
             margin-bottom: 10px;
-            font-family: 'Impact', 'Arial Black', sans-serif;
-            position: relative;
-            z-index: 2;
-            letter-spacing: 3px;
-            text-transform: uppercase;
-            text-shadow: 5px 5px 0 #000;
-        }
-        
-        .tagline {
-            font-size: 1.6rem;
-            color: #fff;
-            font-weight: bold;
-            margin-bottom: 30px;
-            position: relative;
-            z-index: 2;
-            background-color: #000;
-            display: inline-block;
-            padding: 8px 15px;
-        }
-        
-        .names {
-            font-size: 5rem;
-            color: #ffff00;
-            margin: 30px 0 15px;
-            font-family: 'Impact', 'Arial Black', sans-serif;
-            position: relative;
-            z-index: 2;
-            text-transform: uppercase;
             letter-spacing: 2px;
-            text-shadow: 4px 4px 0 #000;
         }
         
-        .join-us-gif {
-            margin: 20px auto;
-            display: block;
-            border: 5px solid #000;
-            max-width: 100%;
-        }
-        
-        /* Main Content - Pop Art Style */
-        .main-content {
-            text-align: center;
-            padding: 0;
-            position: relative;
+        .subtitle {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
         }
         
         .date-location {
-            margin: 40px auto;
-            padding: 40px 30px;
-            max-width: 700px;
-            background-color: #00ccff;
-            position: relative;
-            z-index: 1;
-            border: 8px solid #000;
+            font-size: 1.1rem;
+            margin-top: 20px;
         }
         
-        .rose-gif {
-            position: absolute;
-            top: -30px;
-            right: 30px;
-            max-width: 100px;
-        }
-        
-        .save-date {
-            font-size: 2.8rem;
-            color: #fff;
-            margin-bottom: 30px;
-            font-family: 'Impact', 'Arial Black', sans-serif;
-            text-shadow: 3px 3px 0 #000;
-            text-transform: uppercase;
-        }
-        
-        .wedding-date {
-            font-size: 2.2rem;
-            font-weight: bold;
-            margin-bottom: 15px;
-            color: #ffff00;
-            text-shadow: 2px 2px 0 #000;
-            letter-spacing: 1px;
-        }
-        
-        .location {
-            font-size: 1.8rem;
-            margin-bottom: 15px;
-            background-color: #ff0066;
-            display: inline-block;
-            padding: 10px 20px;
-            color: #fff;
-            border: 4px solid #000;
-            font-weight: bold;
-        }
-        
-        .details {
-            margin: 60px 0;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            background-color: #ffff00;
-            padding: 30px;
-            border: 8px solid #000;
-        }
-        
-        .details p {
-            margin-bottom: 20px;
-            font-size: 1.5rem;
-            font-weight: bold;
-            color: #000;
-        }
-        
-        .details p:last-child {
-            font-size: 2rem;
-            color: #ff0066;
-            text-transform: uppercase;
-            margin-top: 10px;
-        }
-        
-        .butterfly-gif {
-            margin: 20px auto;
-            display: block;
-            max-width: 100%;
-        }
-        
-        /* Love Husband Section */
-        .love-husband-section {
-            margin: 40px 0;
+        /* Navigation */
+        nav {
             text-align: center;
-            background: #fff;
-            padding: 30px;
-            border: 8px solid #000;
+            margin-bottom: 40px;
         }
         
-        .love-husband-gif {
-            max-width: 100%;
-            margin: 0 auto;
-            display: block;
+        nav ul {
+            list-style: none;
         }
         
-        /* Photo Section */
-        .photo-section {
-            margin: 60px 0;
-            text-align: center;
-            position: relative;
-        }
-        
-        .photo-placeholder {
-            width: 300px;
-            height: 300px;
-            background-color: #00ccff;
-            margin: 0 auto;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: #fff;
-            font-size: 1.6rem;
-            border: 8px solid #000;
-            position: relative;
-            font-weight: bold;
-        }
-        
-        .wedding-cake-gif {
-            position: absolute;
-            bottom: -50px;
-            right: -30px;
-            max-width: 120px;
-            z-index: 3;
-        }
-        
-        /* Pop Art RSVP Section */
-        .rsvp-section {
-            text-align: center;
-            margin: 80px 0 60px;
-            padding: 40px 30px;
-            background: #ff6600;
-            position: relative;
-            overflow: hidden;
-            border: 8px solid #000;
-        }
-        
-        .rsvp-gif {
-            max-width: 150px;
-            margin: 0 auto 20px;
-            display: block;
-        }
-        
-        .rsvp-section h2 {
-            color: #fff;
-            margin: 10px 0 30px;
-            font-size: 3rem;
-            position: relative;
+        nav li {
             display: inline-block;
-            font-family: 'Impact', 'Arial Black', sans-serif;
-            text-shadow: 3px 3px 0 #000;
-            letter-spacing: 2px;
+            margin: 0 15px;
         }
         
-        .google-form-container {
-            max-width: 600px;
-            margin: 30px auto 0;
-            padding: 30px;
-            background-color: #000;
-            border: 4px solid #fff;
-            color: #fff;
-        }
-        
-        .google-form-button {
-            display: inline-block;
-            background-color: #ffff00;
+        nav a {
             color: #000;
             text-decoration: none;
-            padding: 15px 40px;
-            font-size: 1.4rem;
-            margin: 25px 0;
-            transition: all 0.3s ease;
-            font-weight: bold;
-            text-transform: uppercase;
-            border: 5px solid #000;
+            font-size: 1rem;
+            border-bottom: 1px solid #000;
+            padding-bottom: 2px;
         }
         
-        .google-form-button:hover {
-            background-color: #fff;
-        }
-        
-        .form-deadline {
-            font-style: italic;
-            margin-top: 20px;
+        nav a:hover {
+            background-color: #000;
             color: #fff;
-            font-weight: bold;
-            font-size: 1.2rem;
         }
         
-        .guestbook-gif {
-            max-width: 150px;
-            margin: 30px auto 0;
-            display: block;
+        /* Sections */
+        section {
+            margin-bottom: 50px;
+        }
+        
+        h2 {
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #000;
+            text-transform: uppercase;
+        }
+        
+        h3 {
+            font-size: 1.3rem;
+            margin: 20px 0 10px;
+        }
+        
+        p {
+            margin-bottom: 15px;
+        }
+        
+        /* Lists */
+        ul, ol {
+            margin-left: 30px;
+            margin-bottom: 15px;
+        }
+        
+        li {
+            margin-bottom: 8px;
+        }
+        
+        /* Schedule Table */
+        .schedule-item {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 0;
+            border-bottom: 1px dotted #999;
+        }
+        
+        .schedule-item:last-child {
+            border-bottom: none;
+        }
+        
+        .time {
+            font-weight: bold;
+            min-width: 120px;
+        }
+        
+        /* Lodging Cards */
+        .lodging-option {
+            border: 1px solid #000;
+            padding: 15px;
+            margin-bottom: 20px;
+        }
+        
+        .lodging-option h3 {
+            margin-top: 0;
+        }
+        
+        /* RSVP Section */
+        .rsvp-section {
+            background-color: #f0f8ff;
+            border: 2px solid #000;
+            padding: 30px;
+            text-align: center;
+            margin: 40px 0;
+        }
+        
+        .rsvp-button {
+            display: inline-block;
+            background-color: #000;
+            color: #fff;
+            text-decoration: none;
+            padding: 12px 30px;
+            margin: 20px 0;
+            font-size: 1.1rem;
+            border: 2px solid #000;
+        }
+        
+        .rsvp-button:hover {
+            background-color: #fff;
+            color: #000;
+        }
+        
+        /* Contact Info */
+        .contact-info {
+            text-align: center;
+            margin-top: 30px;
+            padding-top: 30px;
+            border-top: 2px dashed #000;
         }
         
         /* Footer */
         footer {
             text-align: center;
-            padding: 30px;
-            background-color: #000;
-            color: #fff;
-            margin-top: 40px;
-            font-size: 1.5rem;
-            border-top: 8px solid #ff0066;
+            padding-top: 30px;
+            margin-top: 50px;
+            border-top: 2px solid #000;
+            font-size: 0.9rem;
         }
         
-        /* Responsive Design */
-        @media (max-width: 768px) {
+        /* Utility Classes */
+        .highlight {
+            background-color: #ffff99;
+            padding: 2px 4px;
+        }
+        
+        .note {
+            font-style: italic;
+            color: #666;
+        }
+        
+        /* Responsive */
+        @media (max-width: 600px) {
+            .container {
+                padding: 20px;
+            }
+            
             h1 {
-                font-size: 3rem;
-            }
-            
-            .names {
-                font-size: 3.2rem;
-            }
-            
-            .save-date {
-                font-size: 2.2rem;
-            }
-            
-            .wedding-date {
                 font-size: 1.8rem;
             }
             
-            .rose-gif, .wedding-cake-gif {
-                max-width: 80px;
+            nav li {
+                display: block;
+                margin: 10px 0;
+            }
+            
+            .schedule-item {
+                flex-direction: column;
+            }
+            
+            .time {
+                margin-bottom: 5px;
             }
         }
     </style>
 </head>
 <body>
     <div class="container">
+        <!-- Header -->
         <header>
-            <h1>Save the Date</h1>
-            <p class="tagline">We're throwing a wedding party!</p>
-            <h2 class="names">Jaimie & Graeme</h2>
-            <img src="Come_Join_Us_12053.gif" alt="Come Join Us" class="join-us-gif">
+            <h1>JAIMIE & GRAEME</h1>
+            <p class="subtitle">Are excited to see you :)</p>
+            <div class="date-location">
+                <p><strong>October 11, 2025</strong></p>
+                <p>Port Townsend, Washington</p>
+            </div>
         </header>
         
-        <main class="main-content">
-            <div class="date-location">
-                <img src="XX007211.GIF" alt="Swinging Rose" class="rose-gif">
-                <h2 class="save-date">Please Save the Date</h2>
-                <p class="wedding-date">Weekend of Oct 11, 2025</p>
-                <p class="location">Port Townsend, WA</p>
-            </div>
-            
-            <div class="love-husband-section">
-                <img src="wedding11.gif" alt="I love my husband" class="love-husband-gif">
-            </div>
-            
-            <div class="details">
-                <p>Formal invitation to follow w/ deets!</p>
-                <p>Lodging, transport, schedule, etc</p>
-                <p>CAN'T WAIT!</p>
-                <img src="butflysflower.gif" alt="Butterfly and Flowers" class="butterfly-gif">
-            </div>
-            
-            <div class="photo-section">
-                <div class="photo-placeholder">
-                    <img src="us.jpg" height=300px >
-                </div>
-                <img src="wedding_cake_bridegroomwaving_lg_clr.gif" alt="Wedding Cake" class="wedding-cake-gif">
-            </div>
-            
-            <div class="rsvp-section">
-                <img src="rsvp.gif" alt="RSVP" class="rsvp-gif">
-                <h2>RSVP</h2>
-                <p>Kindly let us know if you'll be joining our celebration!</p>
-                <div class="google-form-container">
-                    <p>Please fill out our RSVP form by clicking the button below:</p>
-                    <a href="https://docs.google.com/forms/d/1jdumwExMCTp5jQSocLJCqtQn6qRtWH0AbpzmHxGsaSI/viewform" class="google-form-button">
-                        RSVP Now
-                    </a>
-                    <p class="form-deadline">Please respond by [RSVP Deadline]</p>
-                    <img src="guestbook_md_wht.gif" alt="Guestbook" class="guestbook-gif">
-                </div>
-            </div>
-        </main>
+        <!-- Navigation -->
+        <nav>
+            <ul>
+                <li><a href="#welcome">Welcome</a></li>
+                <li><a href="#schedule">Schedule</a></li>
+                <li><a href="#lodging">Lodging</a></li>
+                <li><a href="#travel">Travel</a></li>
+                <li><a href="#things-to-do">Things to Do</a></li>
+                <li><a href="#rsvp">RSVP</a></li>
+            </ul>
+        </nav>
         
+        <!-- Welcome Section -->
+        <section id="welcome">
+            <h2>Welcome</h2>
+            <p>
+                We're looking forward to celebrating with you all in
+                our hometown, Port Townsend, Washington! Thanks for making the trip and 
+                sharing this special weekend with us!
+            </p>
+            <p>
+                Additional details to come here
+            </p>
+        </section>
+        
+        <!-- Schedule Section -->
+        <section id="schedule">
+            <h2>Weekend Schedule</h2>
+            <h3>Thursday, October 9</h3>
+            <div class="schedule-item">
+                <span class="time">?? PM</span>
+                <span>Folks getting into town, drinks @ Uptown pub maybe</span>
+            </div>
+            
+
+            <h3>Friday, October 10</h3>
+            <div class="schedule-item">
+                <span class="time">2:00 PM</span>
+                <span>Crab cookout at Fort Worden</span>
+            </div>
+            
+            <h3>Saturday, October 11</h3>
+            <div class="schedule-item">
+                <span class="time">4:00 PM</span>
+                <span>Cocktail Hour @ The Bishop</span>
+            </div>
+            <div class="schedule-item">
+                <span class="time"> </span>
+                <span>Then dinner</span>
+            </div>
+            <div class="schedule-item">
+                <span class="time"> </span>
+                <span>Then dancing</span>
+            </div>
+            
+            <h3>Sunday, October 12</h3>
+            <div class="schedule-item">
+                <span class="time">11:00 AM</span>
+                <span>Farewell Brunch - Location TBD</span>
+            </div>
+        </section>
+        
+        <!-- Lodging Section -->
+        <section id="lodging">
+            <h2>Where to Stay</h2>
+            <p>
+            </p>
+            
+            <div class="lodging-option">
+                <h3>The Bishop</h3>
+                <p class="note">Room block available - mention Baird</p>
+                <p class="note">Ph: 360-302-6984</p>
+                <p class="note">https://www.thebishophotel.com/</p>
+            </div>
+            <div class="lodging-option">
+                <h3>The Swan</h3>
+                <p class="note">https://theswanhotel.com/</p>
+            </div>
+            <div class="lodging-option">
+                <h3>Vacation Rentals</h3>
+                <p>
+                    Airbnb is licensed in PT so there aren't many options, but we've booked out one. Let us know if you need help. 
+                </p>
+            </div>
+        </section>
+        
+        <!-- Travel Section -->
+        <section id="travel">
+            <h2>Getting Here</h2>
+            
+            <h3>By Air</h3>
+            <p>
+                The nearest major airport is Seattle-Tacoma International Airport (SEA), 
+                approximately 2.5 hours away
+            </p>
+            
+            <h3>From Seattle Airport</h3>
+            <ul>
+                <li><strong>Rental Car:</strong> Available at the airport. Drive to 
+                Bainbridge Island Ferry Terminal, take ferry to Bainbridge, then drive 
+                to Port Townsend (total ~2.5 hours). Or drive around through Tacoma, stop at 
+            Hama Hama, get some oysters, camp, stop at Finnriver, etc. </li>
+                <li><strong>Shuttle Service:</strong> Rocket Shuttle offers 
+                direct service - advance booking required</li>
+            </ul>
+        </section>
+        
+        <!-- Things to Do Section -->
+        <section id="things-to-do">
+            <h2>Things to Do</h2>
+            <h3>Explore</h3>
+            <ul>
+                <li>Fort Worden State Park</li>
+                <li>North Beach</li>
+                <li>Uptown *AND* Downtown</li>
+                <li>Wander around boat haven</li>
+                <li>Look for agates at north beach</li>
+                <li>Kayak @ Fort Worden beach</li>
+                <li>Whale watching tours w/ Puget Sound Express</li>
+            </ul>
+            
+            <h3>Eat & Drink</h3>
+            <ul>
+                <li>Finistere (fancy)</li>
+                <li>Green crow tacos (M-F only)</li>
+                <li>Marina Cafe (breakfast)</li>
+                <li>Velocity (great coffee and pastries)</li>
+            </ul>
+        </section>
+        
+        
+        <!-- Footer -->
         <footer>
-            <p>WE CAN'T WAIT TO CELEBRATE WITH YOU!</p>
+            <p>We can't wait to celebrate with you!</p>
+            <p>- Jaimie & Graeme -</p>
         </footer>
     </div>
 </body>
